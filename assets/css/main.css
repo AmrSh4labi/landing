@@ -22,7 +22,9 @@ width: 35px;
 .header .logo a{
  color: var(--mainColor);
 }
-
+.menu{
+    display: none;
+}
 .nav ul{
     display: flex;
     gap: 16px;
@@ -56,4 +58,17 @@ width: 35px;
     color:#ffffff;
     border-radius: 10px;
     font-weight: 700;
+}
+
+/*media header*/
+
+@media screen and (max-width: 992px){
+    .nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+        order: 2;
+        
+    }
 }
