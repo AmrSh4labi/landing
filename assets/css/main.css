@@ -100,24 +100,116 @@ body {
     }
 }
 
+/* course section */
+
+.courses {
+    padding: 30px 0;
+}
+
+.courses .row {
+    gap: 40px;
+}
+
+.course-items,
+.course-description {
+    width: calc((100% - 40px) / 2);
+}
+
+.course-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course {
+    color: #ffffff;
+    width: calc((100% - 20px) / 2);
+}
+
+.course-card {
+    position: relative;
+}
+
+.course img {
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.course-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+
+    align-items: flex-start;
+}
+
+.course-info span:first-of-type {
+    background-color: var(--mainColor);
+    padding: 0px 10px;
+}
+
+.course-info :last-of-type {
+    align-self: end;
+}
+
+.course-details .row {
+    gap: 10px;
+}
+
+.course-details .row:last-of-type {
+    justify-content: flex-start;
+    gap: 20px;
+    color: #969696;
+}
+
+.course-details {
+    color: black;
+}
+
+.cours-description {
+    width: 400px;
+}
+
+.cours-description span {
+    color: var(--mainColor);
+}
+
+.read p {
+    color: #969696;
+}
+
+.read .see-course button {
+    background-color: var(--mainColor);
+    color: #ffffff;
+    padding: 5px 30px;
+    border-radius: 8px;
+}
+
 /* testimonnials section*/
-.testimonnials{
+.testimonnials {
     background-color: #F9F9F9;
     padding: 50px 0;
 }
 
-.testimonials .row{
+.testimonials .row {
     gap: 40px;
 }
-.testimonnials h2{
+
+.testimonnials h2 {
     font-size: 24px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 20px;
 }
-.testimonial{
+
+.testimonial {
     width: calc((100% / 2) - 40px);
-    box-shadow: 0px 8.23719596863793px 8.23719596863793px  rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8.23719596863793px 8.23719596863793px rgba(0, 0, 0, 0.1);
     padding: 20px;
     box-sizing: border-box;
     background-image: url(../img/testimonial/Vector\ testimonial.svg);
@@ -125,73 +217,84 @@ body {
     background-repeat: no-repeat;
     background-size: 80px 80px;
 }
-.user-info img{
+
+.user-info img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
-.user{
+
+.user {
     display: flex;
     gap: 10px;
 }
 
-.rating{
+.rating {
     display: flex;
     gap: 5x;
     flex-wrap: wrap;
 }
+
 /*media testimonial */
 @media screen and (max-width: 768px) {
-    .testimonial{
+    .testimonial {
         width: 100%;
     }
 }
 
 
 /* footer*/
-.footer{
-    background-color:#393E46 ;
+.footer {
+    background-color: #393E46;
     color: #ffffff;
     padding: 50px 0;
 }
-.footer-item{
+
+.footer-item {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
-.footer a{
+
+.footer a {
     color: #ffffff;
     font-size: 12px;
 }
-.footer-left-side{
+
+.footer-left-side {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
-    width:calc((100% - 20px)/2);
+    width: calc((100% - 20px)/2);
 }
-.footer-left-side .logo img{
+
+.footer-left-side .logo img {
     width: 35px;
 }
+
 .footer-left-side .logo {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.footer-left-side .icons img{
-   width: 24px;
-   border: solid 1px #ffffff;
+
+.footer-left-side .icons img {
+    width: 24px;
+    border: solid 1px #ffffff;
 }
+
 .footer-right-side {
-    display: flex ;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width:calc((100% - 20px)/2);
-    
+    flex-grow: 1;
+
 }
-.footer-right-side nav{
+
+.footer-right-side nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,29 +308,32 @@ body {
     .footer .row {
         flex-direction: column;
     }
-    
+
     .footer-left-side,
     .footer-right-side {
         width: 100%;
     }
-    .footer-left-side .icons{
+
+    .footer-left-side .icons {
         display: flex;
         justify-content: center;
         gap: 10px;
     }
 }
+
 @media screen and (max-width: 576px) {
-    .footer-right-side{
+    .footer-right-side {
         gap: 10px;
         text-align: center;
     }
-    .footer-right-side .footer-item{
+
+    .footer-right-side .footer-item {
         width: calc((100% - 10px)/3);
     }
 }
 
 @media screen and (max-width: 460px) {
-    .footer-right-side .footer-item{
+    .footer-right-side .footer-item {
         width: 100%;
         text-align: center;
     }
