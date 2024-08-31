@@ -190,6 +190,16 @@ body {
     border-radius: 8px;
 }
 
+/*media course*/
+
+@media screen and (max-width: 1048px) {
+   .course-items,
+   .course-description {
+        width: 100%;
+    }
+}
+
+
 /* testimonnials section*/
 .testimonnials {
     background-color: #F9F9F9;
