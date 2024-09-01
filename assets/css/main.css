@@ -109,12 +109,15 @@ body {
     justify-content: center;
 }
 .find-course{
-    width: 50%;
+    width: 400px;
+}
+.find-course #l1{
+color: var(--mainColor);
 }
 .find {
     background-color: #ffffff;
     padding: 50px 0;
-    box-shadow:  0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow:  0px 0px 2px 0px rgba(0, 0, 0, 0.2);
 }
 .register .row{
 justify-content: flex-start;
@@ -151,7 +154,106 @@ justify-content: flex-start;
         flex-direction: column;
         align-items: center;
     }
+    .girl-img{
+        display: flex;
+        justify-content: center;
+    }
 }
+
+/* form section */
+.form-us .form-row{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: normal;
+
+}
+.form-us
+{
+    width: 100%;
+    display: flex;
+    background-color: #F5F5F5;
+    padding: 60px 0px;
+}
+.left-form{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left-form h2{
+    width: 200px;
+
+}
+.left-form #l1{
+    color:var(--mainColor)
+}
+.right-form{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.f-row {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+
+}
+
+.f-row .form-item {
+    background-color: var(--mainColor);
+    width: 250px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    color: #ffffff ;
+    border-radius: 10px;
+}
+.f-row .form-item h3{
+    margin-bottom: 10px;
+}
+.f-row .form-item img{
+width: 40px;
+    height: 40px;
+    background-color:#ffffff ;
+    border-radius: 50%;
+}
+.right-form .page{
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+}
+.right-form .page img{
+    width: 20px;
+    height: 20px;
+}
+
+/* form-us media */
+
+@media screen and (max-width: 1160px) {
+   .form-us .left-form{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    }
+}
+@media screen and (max-width: 992px) {
+    .right-form .f-row{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .right-form .page{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 /* course section */
 
